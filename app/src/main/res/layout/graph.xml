@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/lastbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            />
+
+        <TextView
+            android:id="@+id/stockname"
+            android:layout_width="156dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:text="StockName"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="270dp">
+        <com.jjoe64.graphview.GraphView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/stock_market_plot">
+        </com.jjoe64.graphview.GraphView>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="70dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:text="Daily"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="335dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="6Month"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="155dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2Year"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="400dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
